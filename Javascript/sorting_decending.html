@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="arr1"></h2>
+    <h2 id="arr2"></h2>
+    <script>
+        const arr1 = [24.6,23.7,18.9,76.5]; 
+        const arr2 = [54,23,12,97,100]; 
+        
+        function arrSort(arr) { 
+            arr.sort((a,b)=>a-b); 
+            arr.reverse(); 
+            return arr; 
+        } 
+        let dec=document.getElementById("arr1");
+        let dec2=document.getElementById("arr2");
+        dec.innerText=arrSort(arr1)
+        dec2.innerText=arrSort(arr2)
+
+        console.log(arrSort(arr1)); 
+        console.log(arrSort(arr2));
+    </script>
+</body>
+</html>
